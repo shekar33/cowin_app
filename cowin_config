@@ -1,0 +1,12 @@
+[Co-win_Portal]
+base_url = https://cdn-api.co-vin.in/api
+gen_otp =/v2/auth/public/generateOTP
+con_otp = /v2/auth/public/confirmOTP
+get_states = /v2/admin/location/states?Accept-Language=te-IN
+get_districts = /v2/admin/location/districts/{state_id}?Accept-Language=te_IN
+by_pin = /v2/appointment/sessions/public/findByPin?pincode={pincode}&date={date}
+by_district = /v2/appointment/sessions/public/findByDistrict?district_id={district_id}&date={date}
+by_latlong = /v2/appointment/centers/public/findByLatLong?lat={lat}&long={long}
+calendarby_pin =/v2/appointment/sessions/public/calendarByPin?pincode={pincode}&date={date}
+calendarby_district = /v2/appointment/sessions/public/calendarByDistrict?district_id={id}&date={date}
+calendarby_center = /v2/appointment/sessions/public/calendarByCenter?center_id={id}&date={date}
